@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/traffic_12750262.png" type="image/x-icon">
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="images/WhatsApp Video 2024-07-11 at 20.19.29_680680c2.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1>Convert</h1>
+        <button onclick="openDtoBPage()">Decimal to Binary</button>
+        <button onclick="openBtoDPage()">Binary to Decimal</button>
+        <button onclick="openDtoHPage()">Decimal to Hexadecimal</button>
+        <button onclick="openHtoDPage()">Hexadecimal to Decimal</button>
+        <button onclick="openHome()">Main Menu</button>
+    </div>
+    <script>
+    
+        function openDtoBPage(){
+          document.location.href="DtoB.html"
+        }
+        function openBtoDPage() {
+          document.location.href="BtoD.html";
+        }
+        function openHtoDPage() {
+          document.location.href="HtoD.html";
+        }
+        function openDtoHPage() {
+          document.location.href="DtoH.html";
+        }
+        function openHome(){
+        document.location.href="home.html";
+      }
+    </script>
+</body>
+</html>

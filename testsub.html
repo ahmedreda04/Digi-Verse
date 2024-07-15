@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtraction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/traffic_12750262.png" type="image/x-icon">
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="images/WhatsApp Video 2024-07-11 at 20.19.29_680680c2.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <label for="binary1">Binary Number 1:</label>
+        <input type="text" id="binary1" required><br><br>
+        <label for="binary2">Binary Number 2:</label>
+        <input type="text" id="binary2" required><br><br>
+        <button type="button" onclick="subtractBinary()">Subtract</button>
+        <h2>Result: <span id="result"></span></h2>
+    <button onclick="openCalc()">BACK</button>
+    <button onclick="openHome()">Main Menu</button>
+    </div>
+
+    <script>
+    
+    function openCalc(){
+        document.location.href="calc.html";
+    }
+    function openHome(){
+        document.location.href="home.html";
+      }
+    </script>
+</body>
+</html>

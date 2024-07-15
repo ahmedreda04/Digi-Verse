@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Decimal to Binary Converter</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="images/traffic_12750262.png" type="image/x-icon">
+ </head>
+  <body>
+      <video autoplay muted loop>
+        <source src="images/WhatsApp Video 2024-07-11 at 20.19.29_680680c2.mp4" type="video/mp4">
+      </video>
+    <div class="container">
+      <h1>Decimal to Binary Converter</h1>
+      <input type="number" id="decimalInput" placeholder="Enter a decimal number">
+      <button onclick="convertToBinary()">Convert</button>
+      <input type="text" id="binaryOutput" placeholder="this is binary number">
+      <button onclick="openConv()">BACK</button>
+      <button onclick="openHome()">Main Menu</button>
+    </div>
+      <script>
+          function convertToBinary() {
+        var a = parseInt (document.getElementById("decimalInput").value);
+        var b =a.toString(2);
+        document.getElementById("binaryOutput").value= b;
+        if (isNaN(decimalValue)) {
+          alert("Please enter a valid decimal number.");
+          return;
+        }
+          }
+          function openConv(){
+      document.location.href="conv.html";
+    }
+    function openHome(){
+        document.location.href="home.html";
+      }
+    </script>
+  </body>
+</html>

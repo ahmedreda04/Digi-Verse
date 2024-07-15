@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexa to Decimal Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/traffic_12750262.png" type="image/x-icon">
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="images/WhatsApp Video 2024-07-11 at 20.19.29_680680c2.mp4" type="video/mp4">
+      </video>
+  <div class="container">
+    <h1>Hexadecimal to Decimal Converter</h1>
+    <input type="text" id="hexInput" placeholder="Please enter hex number">
+    <button onclick="convertToDecimal()">Convert</button>
+    <input type="text" id="result" placeholder="This is the decimal value" readonly>
+    <button onclick="openConv()">BACK</button>
+    <button onclick="openHome()">Main Menu</button>
+  </div>
+  <script>
+    function convertToDecimal() {
+      const hexInput = document.getElementById("hexInput");
+      const resultEl = document.getElementById("result");
+
+      const hexAsText = hexInput.value.toUpperCase().trim();
+
+      // Validate if input is a valid hexadecimal number
+      const isValidHex = /^[0-9A-F]+$/.test(hexAsText);
+
+      if (!isValidHex) {
+        alert("Please enter values between 0-9 and A-F");
+        resultEl.value = ""; 
+        return;
+      }
+
+      const decimalNumber = parseInt(hexAsText, 16);
+
+      resultEl.value = decimalNumber;
+    }
+
+    function openConv(){
+      document.location.href = "conv.html";
+    }
+
+    function openHome(){
+      document.location.href = "home.html";
+    }
+  </script>
+</body>
+</html>

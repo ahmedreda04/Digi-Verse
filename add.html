@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/traffic_12750262.png" type="image/x-icon">
+
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="images/WhatsApp Video 2024-07-11 at 20.19.29_680680c2.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1>Binary Addition</h1>
+        <input type="text" id="binary1" placeholder="Enter first binary number">
+        <input type="text" id="binary2" placeholder="Enter second binary number">
+        <button onclick="addBinary()">Add</button>
+        <div class="paragraph-box"><p id="result"></p></div> 
+        <button onclick="openCalc()">Back</button>
+        <button onclick="openHome()">Main Menu</button>
+    </div>
+    <script>
+        function addBinary() {
+            var binary1 = document.getElementById("binary1").value;
+            var binary2 = document.getElementById("binary2").value;
+            var result = parseInt(binary1, 2) + parseInt(binary2, 2);
+            document.getElementById("result").innerHTML = "Result : " +result.toString(2);
+        }
+            function openCalc(){
+                document.location.href="calc.html";
+        }
+        function openHome(){
+        document.location.href="home.html";
+      }
+    </script>
+</body>
+</html>

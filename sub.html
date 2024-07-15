@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtraction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/traffic_12750262.png" type="image/x-icon">
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="images/WhatsApp Video 2024-07-11 at 20.19.29_680680c2.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1>Binary Subtraction</h1>
+        <input type="text" id="binary1" placeholder="Enter first binary number">
+        <input type="text" id="binary2" placeholder="Enter second binary number">
+        <button type="button" onclick="subtractBinary()">Sub</button>
+        <div class="paragraph-box"><p id="result"></p></div> 
+        <button onclick="openCalc()">Back</button>
+        <button onclick="openHome()">Main Menu</button>
+    </div>
+
+    <script>
+        function subtractBinary() {
+    const binary1 = document.getElementById('binary1').value;
+    const binary2 = document.getElementById('binary2').value;
+
+    const decimal1 = parseInt(binary1, 2);
+    const decimal2 = parseInt(binary2, 2);
+
+    const decimalResult = decimal1 - decimal2;
+
+    const binaryResult = decimalResult.toString(2);
+
+    document.getElementById('result').textContent ="Result : " +  binaryResult;
+}
+
+    
+    function openCalc(){
+        document.location.href="calc.html";
+    }
+    function openHome(){
+        document.location.href="home.html";
+      }
+    </script>
+</body>
+</html>
